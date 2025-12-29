@@ -1,0 +1,263 @@
+/* title and  navigation bar */
+.title-menu-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+}
+
+/* DESKTOP VIEW OF  MENU */
+#menu {
+  display: flex;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: large;
+  gap: 1rem;
+  list-style: none;
+  text-decoration: underline;
+}
+.menu a {
+  text-decoration: none;
+  color: rgb(44, 22, 82);
+}
+.menu a:hover{
+  color: #95c843;
+ 
+}
+
+/*  MOBILE AND SMALL SCREEN  MENU VIEW */
+@media (max-width: 768px) {
+
+  /* menu icon */
+  .menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu-icon span {
+    display: block;
+    height: 4px;
+    background: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /* icon animation */
+  .menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .menu-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* SLIDE MENU FROM RIGHT */
+  #menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 50vh;
+    width: 260px;
+    background: rgb(11, 148, 100);
+    flex-direction: column;
+    padding-top: 80px;
+    transition: right 0.4s ease;
+    border-radius: 1rem;
+  }
+
+  #menu.show {
+    right: 0;
+  }
+
+  .menu a {
+    color: black;
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 20px;
+  }
+}
+
+/*First Page  layout organize stylesheet*/
+.first-page {
+  display: flex;
+}
+
+.logo-alignment {
+  display: flex;
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+.logo {
+  width: 24rem;
+  height: 24rem;
+}
+
+/* Login Box format style */
+#box {
+  width: 300px;
+  margin: 120px auto;
+  background: rgb(32, 25, 25);
+  padding: 25px;
+  border-radius: 1rem;
+}
+
+.login {
+  color: white;
+}
+
+#box h2 {
+  text-align: center;
+}
+
+#box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #30a004;
+  border-radius: 0.25rem;
+}
+
+#box button {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+#box button:hover {
+  background: #267706;
+}
+
+/* Page Two layout organize stylesheet*/
+.page-two-lay-out {
+  display: flex;
+  gap: 6rem;
+}
+
+.photo-market {
+  width: 25rem;
+  height: 35rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.text-box {
+  font-size: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  border-radius: 1rem;
+  border: solid;
+  color: white;
+  background-color: black;
+}
+#page-three-title{
+  color: #267706;
+  font-weight: bold;
+  text-align: center;
+}
+#page-three-topproducts{
+  display: flex;
+  margin-left: 7rem;
+  gap: 6rem;
+}
+.page-three-photoone{
+  width: 16rem;
+  height: 16rem;
+}
+.page-three-phototwo{
+  width: 16rem;
+  height: 16rem;
+}
+.page-three-photothree{
+  width: 16rem;
+  height: 16rem;
+}
+#page-three-bottomproducts{
+  display: flex;
+  margin-left: 7rem;
+  gap: 6rem;
+}
+.page-three-photofour{
+  width: 16rem;
+  height: 16rem;
+}
+.page-three-photofive{
+  width: 16rem;
+  height: 16rem;
+}
+.page-three-photosix{
+  width: 16rem;
+  height: 16rem;
+}
+#page-four{
+  display: flex;
+  gap: 4rem;
+}
+#page-four-sologan{
+  color: blue;
+  text-align: center;
+  font-size: 3rem;
+
+}
+#page-four-photobox{
+  margin-left: 3rem ;
+}
+#page-four-text{
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+  margin-right: 4rem;
+  background-color:white;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+.page-five-photos{
+  display: flex;
+  gap: 8rem;
+  margin-left: 18rem;
+}
+.page-five-phoneicon{
+  margin-top: 3rem;
+   width: 6rem;
+  height: 7rem;
+
+}
+.page-five-locationicon{
+  margin-top: 2rem;
+   width: 8rem;
+  height: 8rem;
+
+}
+.page-five-emailicon{
+   width: 10rem;
+  height: 10rem;
+
+}
+#page-five-text{
+  font-size: 1rem;
+  font-weight: bold;
+}
+#closer{
+  font-weight: bold;
+  color: green;
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 8rem;
+}
+
