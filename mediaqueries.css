@@ -1,11 +1,12 @@
 @media (max-width: 1200px) {
   .title-menu-icon {
-    padding: 1rem;
+    padding: 0.8rem 1rem;
   }
 
   .first-page {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 
   .logo-alignment {
@@ -14,43 +15,50 @@
   }
 
   .logo {
-    width: 20rem;
-    height: 20rem;
+    width: 40vw;
+    max-width: 18rem;
+    height: auto;
   }
 
   #box {
-    margin: 60px auto;
+    width: 85%;
+    max-width: 320px;
+    margin: 2rem auto;
   }
 
   .page-two-lay-out {
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .photo-market {
-    width: 22rem;
+    width: 70%;
+    max-width: 22rem;
     height: auto;
     margin: 0;
   }
 
   .text-box {
-    font-size: 1.6rem;
-    margin: 1rem;
+    width: 90%;
+    font-size: 1.4rem;
+    margin: 0 auto;
     text-align: center;
   }
 
   #page-three-topproducts,
   #page-three-bottomproducts {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
     margin-left: 0;
-    gap: 3rem;
   }
 
   #page-four {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
 
   #page-four-photobox {
@@ -58,20 +66,22 @@
   }
 
   #page-four-text {
-    font-size: 1.6rem;
-    margin: 1rem;
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 0 auto;
   }
 
   .page-five-photos {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 3rem;
     margin-left: 0;
-    gap: 4rem;
   }
 
   #closer {
-    font-size: 5rem;
-    margin-top: 5rem;
+    font-size: 4rem;
+    margin-top: 4rem;
   }
 }
 
@@ -84,11 +94,12 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 240px;
+    width: 70%;
+    max-width: 260px;
     height: 100vh;
     flex-direction: column;
     background: rgb(11, 148, 100);
-    padding-top: 80px;
+    padding-top: 4rem;
     transition: right 0.4s ease;
   }
 
@@ -96,32 +107,31 @@
     right: 0;
   }
 
-  .first-page {
-    flex-direction: column;
-  }
-
   .logo {
-    width: 16rem;
-    height: 16rem;
+    width: 60vw;
+    max-width: 15rem;
   }
 
   #box {
     width: 90%;
-    margin: 40px auto;
+    margin: 1.5rem auto;
   }
 
   .photo-market {
-    width: 18rem;
+    width: 85%;
+    max-width: 18rem;
   }
 
   .text-box {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
   }
 
   #page-three-topproducts,
   #page-three-bottomproducts {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .page-three-photoone,
@@ -130,28 +140,30 @@
   .page-three-photofour,
   .page-three-photofive,
   .page-three-photosix {
-    width: 14rem;
-    height: 14rem;
+    width: 70%;
+    max-width: 14rem;
+    height: auto;
   }
 
   #page-four-sologan {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #page-four-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .page-five-phoneicon,
   .page-five-locationicon,
   .page-five-emailicon {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: auto;
   }
 
   #closer {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 3rem;
   }
 }
+
 
