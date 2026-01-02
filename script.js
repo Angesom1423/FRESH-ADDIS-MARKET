@@ -17,3 +17,37 @@ function login() {
     alert("Wrong username or password");
   }
 }
+function signup() {
+  const username = document.getElementById("signupUsername").value.trim();
+  const password = document.getElementById("signupPassword").value;
+  const confirm = document.getElementById("signupConfirm").value;
+  const msg = document.getElementById("signupMsg");
+
+  if (!username || !password || !confirm) {
+    msg.textContent = "All fields are required";
+    msg.style.color = "red";
+    return;
+  }
+
+  if (password !== confirm) {
+    msg.textContent = "Passwords do not match";
+    msg.style.color = "red";
+    return;
+  }
+
+  // store user (for demo purposes)
+  const user = {
+    username: username,
+    password: password
+  };
+
+  localStorage.setItem("user", JSON.stringify(user));
+
+  msg.textContent = "Account created successfully!";
+  msg.style.color = "green";
+
+  // optional: clear fields
+  document.getElementById("signupUsername").value = "";
+  document.getElementById("signupPassword").value = "";
+  document.getElementById("signupConfirm").value = "";
+}
