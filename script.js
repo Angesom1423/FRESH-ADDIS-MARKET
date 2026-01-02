@@ -12,7 +12,7 @@ function login() {
   const password = document.getElementById("password").value;
   if (username === "admin" && password === "1234") {
     //when click the login icon the page goes to the product page
-    window.location.href = "product.html";
+    window.location.href = "index.html";
   } else {
     alert("Wrong username or password");
   }

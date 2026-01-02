@@ -87,30 +87,29 @@
     font-size: 20px;
   }
 }
-
-/*First Page  layout organize stylesheet*/
-.first-page {
-  display: flex;
-}
-
 .logo-alignment {
   display: flex;
-  margin-left: 4rem;
-  margin-top: 4rem;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height:28rem         /* full screen */
 }
-
 .logo {
-  width: 24rem;
-  height: 24rem;
+  width: 28rem;
+  height: 28rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Login Box format style */
 #box {
-  width: 300px;
-  margin: 120px auto;
+  width: 28rem;
+  align-items: center;
+  justify-content: center;
   background: rgb(32, 25, 25);
-  padding: 25px;
+  padding: 21px;
   border-radius: 1rem;
+  margin-left: 25rem;
+  margin-top: 2rem;
 }
 
 .login {
@@ -263,4 +262,30 @@
 #message{
   color: white;
 }
-]
+.home-page-design{
+  display: flex;
+  gap: 6rem;
+  align-items:center;
+  justify-content: center;
+}
+.logo-design{
+  height: 8rem;
+  width: 8rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+.title-home-page{
+  margin-top: 2rem;
+  color: green;
+}
+.title-home-page{
+  font-size: 1.5rem;
+}
+.login-page-text{
+  font-weight: bold;
+  color:green;
+  text-align: center;
+  font-size: 1rem;
+}
+
