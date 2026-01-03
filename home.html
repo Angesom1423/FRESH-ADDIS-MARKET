@@ -10,6 +10,19 @@
 
 <body>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const supabaseUrl = "sb_publishable_bFzOdiOjZhADvlvzhzy2uw_OHB2UFzH";
+  const supabaseKey = "sb_secret_DJLoF_IgL8JT47hjlcat2A_V8m6CXnm;
+  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+  supabase.auth.getUser().then(({ data }) => {
+    if (!data.user) {
+      window.location.href = "index.html";
+    }
+  });
+</script>
+
 <section id="home">
     <nav class="title-menu-icon">
     <div class="title">
